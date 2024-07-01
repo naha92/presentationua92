@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank you for listening to my TED talk</title>
+    <meta name="viewport" content="width=device-width">
     <style>
         body {
             display: flex;
@@ -18,14 +15,10 @@
         }
         h1 {
             margin-bottom: 20px;
-            font-size: 24px;
         }
         .container {
-            width: 100%;
-            max-width: 800px;
-            margin: 10px;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
         }
         .side-banner {
@@ -33,11 +26,11 @@
             height: 240px;
             background-color: #ffcc00;
             border: 2px solid #000;
-            margin: 10px;
+            margin: 0 10px;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 14px;
+            font-size: 10px;
             font-weight: bold;
             color: #000;
             overflow: hidden;
@@ -45,45 +38,31 @@
             text-align: center;
         }
         video {
-            width: 100%;
-            max-width: 100%;
+            max-width: 80%;
             height: auto;
             border: 5px solid #000;
         }
-        .red-text {
-            color: red;
-        }
-
-        @media screen and (min-width: 600px) {
-            h1 {
-                font-size: 32px;
-            }
-            .side-banner {
-                font-size: 18px;
-            }
-        }
     </style>
+    <title>Thank you for listening to my TED talk</title>
 </head>
 <body>
+    <div class="container"><h1>Thank you for listening to my TED talk</h1></div>
     <div class="container">
-        <h1>Thank you for listening to my <span class="red-text">TED</span> talk</h1>
+        <div class="side-banner">
+            <pre>
+  /\_/\  
+ ( o.o ) 
+  > ^ <
+            </pre>
+        </div>
         <video controls autoplay name="media">
             <source src="https://shattereddisk.github.io/rickroll/rickroll.mp4" type="video/mp4">
         </video>
-    </div>
-    <div class="container">
         <div class="side-banner">
             <pre>
-                /\_/\
-             ( o.o )
-              > ^ <
-            </pre>
-        </div>
-        <div class="side-banner">
-            <pre>
-              /\\__/\\
-              ( o.o )
-               > ^ <
+   /\\__/\\  
+  ( o.o ) 
+   > ^ <
             </pre>
         </div>
     </div>
