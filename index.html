@@ -1,6 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you for listening to my TED talk</title>
     <style>
         body {
             display: flex;
@@ -15,10 +18,14 @@
         }
         h1 {
             margin-bottom: 20px;
+            font-size: 24px;
         }
         .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 10px;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
         }
         .side-banner {
@@ -26,11 +33,11 @@
             height: 240px;
             background-color: #ffcc00;
             border: 2px solid #000;
-            margin: 0 10px;
+            margin: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 10px;
+            font-size: 14px;
             font-weight: bold;
             color: #000;
             overflow: hidden;
@@ -38,33 +45,45 @@
             text-align: center;
         }
         video {
-            max-width: 80%;
+            width: 100%;
+            max-width: 100%;
             height: auto;
             border: 5px solid #000;
         }
+        .red-text {
+            color: red;
+        }
+
+        @media screen and (min-width: 600px) {
+            h1 {
+                font-size: 32px;
+            }
+            .side-banner {
+                font-size: 18px;
+            }
+        }
     </style>
-    <title>Thank you for listening to my TED talk</title>
 </head>
 <body>
     <div class="container">
+        <h1>Thank you for listening to my <span class="red-text">TED</span> talk</h1>
+        <video controls autoplay name="media">
+            <source src="https://shattereddisk.github.io/rickroll/rickroll.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="container">
         <div class="side-banner">
             <pre>
-  /\_/\  
- ( o.o ) 
- > ^ <
+                /\_/\
+             ( o.o )
+              > ^ <
             </pre>
         </div>
-        <div class="container">
-            <h1>Thank you for listening to my TED talk</h1>
-            <video controls autoplay name="media">
-                <source src="https://shattereddisk.github.io/rickroll/rickroll.mp4" type="video/mp4">
-            </video>
-        </div>
         <div class="side-banner">
             <pre>
-   /\\__/\\  
-  ( o.o ) 
-  > ^ <
+              /\\__/\\
+              ( o.o )
+               > ^ <
             </pre>
         </div>
     </div>
